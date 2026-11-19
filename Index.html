@@ -1,13 +1,46 @@
-<¡DOCTYPE html>
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
   <title> LEVIS TIENDA </title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    .galeria {
+      display: flex;
+      gap: 20px;
+    }
+    .tarjeta {
+      width: 250px;
+    }
+    .tarjeta img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .tarjeta h3 {
+      font-size: 16px;
+      margin: 10px 0 5px 0;
+    }
+
+    .tarjeta p {
+      font-size: 14px;
+      color: #555;
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1> Levi's </h1>
-    <p>Marca emblemtaica fundada en 1853</p>
-  </header>
+    <header class="encabezado-levis">
+        <img src="levis.jpg" alt="Logo de Levi's" class="logo">
+        <div class="texto-encabezado">
+          <h1>Levi's</h1>
+          <p>Marca emblemática fundada en 1853</p>
+        </div>
+      </header>         
   <navbar>
     <a href= "#inicio">Inicio</a>
     <a href= "#mujer">Mujer</a>
@@ -15,6 +48,41 @@
     <a href= "formulario.html">Cuenta</a>
   </navbar>
   <h2 id="inicio">INICIO</h2>
-  <p>tienda en línea dedicada a exhibir y vender prendas de vestir, calzado y accesorios a través de un catálogo digital con compras y envíos a domicilio.</p>
+  <p>tienda en línea dedicada a exhibir y vender prendas de vestir, calzado y accesorios a
+    través de un catálogo digital con compras y envíos a domicilio.</p>
   <img src="modeloslevis.jpg" alt="modelos levi's">
+  <p>Con más de un siglo y medio de historia, Levi’s es el referente
+    mundial de la mezclilla y la marca que inventó el pantalón vaquero moderno. <br>
+    Para facilitar la búsqueda del ajuste ideal entre su amplio catálogo, la 
+    firma clasifica sus prendas mediante un icónico sistema de códigos numéricos
+    de tres dígitos.</p>
+    <h2 id="mujer"> Jeans de mujer</h2>
+  <div class="galeria">
+    <div class="tarjeta">
+      <img src="Looseandbaggy.webp" alt="Loose & Baggy">
+      <h3>Loose & Baggy</h3>
+      <p>Un corte recto y relajado con mucho espacio desde la cadera hasta el tobillo.</p>
+    </div>
+
+    <div class="tarjeta">
+      <img src="wideleg.webp" alt="Wideleg">
+      <h3>Wideleg</h3>
+      <p>Amplio y holgado desde la cadera y el muslo hasta el dobladillo.</p>
+    </div>
+
+    <div class="tarjeta">
+      <img src="straightandtaper.webp" alt="Straight & Taper">
+      <h3>Straight & Taper</h3>
+      <p>Un clásico. El mismo ancho en la rodilla y en la abertura de la pierna.</p>
+    </div>
+
+    <div class="tarjeta">
+      <img src="bootcutandflare.webp" alt="Bootcut & Flare">
+      <h3>Bootcut & Flare</h3>
+      <p>Ajusta en la cadera y el muslo, se ensancha desde la pantorrilla hasta el tobillo.</p>
+    </div>
+  </div>
+</body>
+</html>
+
 </body>
